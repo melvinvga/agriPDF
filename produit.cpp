@@ -23,8 +23,8 @@ QString Produit::versChaine()
 {
     qDebug()<<"QString Produit::versChaine()";
     QString resultat;
-    resultat+="<br>";
-    resultat+="                                Nom du produit : "+nomProduit+"<br>                                Information du produit : "+informationProduit+"<br>                                <img src='"+imageProduit+"'><br><br>                                Quantité : "+quantiteProduit+"<br>                                Prix du produit : "+prixUnitaire+"€<br>";
+    resultat+="<center><br>";
+    resultat+="Nom du produit : "+nomProduit+"<br>Information du produit : "+informationProduit+"<br><img src='"+imageProduit+"'><br><br>Quantité : "+quantiteProduit+"<br>Prix du produit : "+prixUnitaire+"€<br></center>";
 
     qDebug()<<resultat;
     return resultat;

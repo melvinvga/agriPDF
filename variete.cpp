@@ -20,9 +20,8 @@ QString Variete::versChaine()
 {
     qDebug()<<"QString Variete::versChaine()";
     QString resultat;
-    resultat+="<br>";
-    resultat+="        Nom de la variété : "+nomVariete+"<br>";
-    resultat+="        Liste des produits de la variété : <br>";
+    resultat+="<center><h3>Nom de la variété : "+nomVariete+"</h3><br>";
+    resultat+="<h3>Liste des produits de la variété : </h3><br><center>";
 
     for(int compteur=0 ; compteur < lesProduits.size() ; compteur ++) {
         resultat += lesProduits[compteur].versChaine();

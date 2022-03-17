@@ -27,7 +27,7 @@ void PDF::fermer()
     QPdfWriter* printer = new QPdfWriter(nomDoc);
     printer->newPage();
     printer->setTitle("AGRIC: Catalogue des articles d'agriculteurs");
-    printer->setPageSize(QPagedPaintDevice::A4);
+    printer->setPageSize(QPageSize::A4);
 
     print(printer);
 }

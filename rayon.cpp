@@ -22,8 +22,8 @@ QString Rayon::versChaine()
 {
     qDebug()<<"QString Rayon::versChaine()";
     QString resultat;
-    resultat+="Nom du rayon : "+nomRayon+"<br>";
-    resultat+="Liste des variétés du rayon : <br>";
+    resultat+="<center><h1><color:red>Nom du rayon : "+nomRayon+"</color></h1><br>";
+    resultat+="<h2>Liste des variétés du rayon : </h2><br></center>";
 
     for(int compteur=0 ; compteur < lesVarietes.size() ; compteur ++) {
         resultat += lesVarietes[compteur].versChaine();
